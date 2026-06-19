@@ -7,45 +7,10 @@ To start this web streamlt application, first you will have to git clone this gi
 ### Windows 10/11 and macOS
 If you haven't installed Docker Desktop, you can download it from the [Docker website](https://docs.docker.com/desktop/install/windows-install/).
 
-### Start Docker Desktop app
-First you will need to open the Docker Desktop app 
-
-![image](https://github.com/inf2021013/data_analysis_dev_app/assets/166173503/58b906f0-57ae-4089-aea8-e46da4316a52)
-
-and ensure it runs. 
-
-![image](https://github.com/inf2021013/data_analysis_dev_app/assets/166173503/a2dc4740-1700-45e6-9f6b-3f70435d9c81)
-
-## Linux
-### Start Docker Daemon:
-Open a terminal and run:
-```
-    sudo systemctl start docker
-```
-### Enable Docker to Start at Boot (Optional):
-
-To ensure Docker starts on boot, run:
-```
-    sudo systemctl enable docker
-```
-## Verify Docker Daemon it runs
-You can verify it runs by typing in your terminal:
-```
-docker info
-```
-if its not running you will get an error.
-
-### Build docker image container
-To build the docker image container you will have to be inside your app folder and then type on the terminal:
-```
-docker build -t data_analysis_dev_app .
-```
-and Wait for it to build.
-
 ### run the Docker Container
 To run the docker container you will have to enter the following command on the terminal:
 ```
-docker run -p 8501:8501 data_analysis_dev_app
+docker run -p 8501:8501 ml-streamlit-app
 ```
 
 ### Open your app in your browser
